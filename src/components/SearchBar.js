@@ -1,4 +1,6 @@
 import React from 'react';
+import './SearchBar.css';
+import logo from'./imgs/db.png';
 
 class SearchBar extends React.Component {
   state ={ term: '' };
@@ -16,10 +18,12 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div className="search-bar ui segment">
+       <img src={logo} alt="Daniel" className="header__logo"></img>
         <form onSubmit={this.onFormSubmit} className="ui form">
           <div className="field">
-            <label>Video Search</label>
+            <label>Search Dan's DarkTube:</label>
             <input
+              style={{background: "#99AAB5"}}
               type="text"
               value={this.state.term}
               onChange={this.onInputChange}

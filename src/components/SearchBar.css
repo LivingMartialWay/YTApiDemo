@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Cantata One');
+
+.body {
+  background: #2C2F33;
+}
+
+.search-bar.ui.segment {
+  margin-top: 4vh;
+  background-color: #7289DA;
+}
+
+.ui.segment {}
+
+.ui.header {
+  font-size: 25px;
+  text-align: center;
+}
+
+.header__logo {
+  height: 80%;
+  position: absolute;
+  float: right;
+  max-width: 15%;
+  right: 3.5%;
+}
+
+.ui.form {
+  max-width: 85%;
+}
+
+.field {
+  font-size: 20px;
+}
+
+.field>label {
+  color: white;
+  font-size: 35px;
+  padding-bottom: 1vh;
+  font-family: "Cantata_One";
+}
+
+.input {
+  background: #adadad !important;
+}

@@ -2,7 +2,8 @@ import React from 'react';
 import SearchBar from './SearchBar';
 import youtube from '../apis/youtube';
 import VideoList from './VideoList';
-import VideoDetail from './VideoDetail'
+import VideoDetail from './VideoDetail';
+import './app.css';
 
 const KEY = 'AIzaSyAp1CcZzLi66lg_uKb_We8qPOq0lcXWnQ4';
 
@@ -10,7 +11,7 @@ class App extends React.Component {
   state = { videos: [], selectedVideo: null };
 
   componentDidMount() {
-    this.onTermSubmit('kittens');
+    this.onTermSubmit('Software developer SALARIES are higher than you think');
   }
 
   onTermSubmit =  async term => {
